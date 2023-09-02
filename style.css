@@ -85,12 +85,3 @@ button:hover{
 
     background-color: rgb(187, 12, 200);
 }
-img{
-    margin-left: 120px;
-    height: 100%;
-    width: 300px;
-    transform: translate(200%,2%);
-    cursor: pointer;
-    border: 20px;
-   
-}
