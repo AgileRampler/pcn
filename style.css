@@ -45,19 +45,17 @@ nav{
     background-color: transparent;
 
 }
-.button{
+.button1{
     background-color: purple;
     border-radius: 120px 20px   ;
-    text-decoration: none;
-    color: white;
     padding: 12px 24px;
     background-color: color-mix(in srgb, purple 60%, pink 40%);
-  
-    
-    
+    color: white;
+    text-decoration: none;
+    list-style: none;
 }
 
-.button:hover{
+.button1:hover{
 
     background-color: rgb(187, 12, 200);
 }
@@ -78,7 +76,8 @@ h1{
 
 }
 
-button{
+.button2{
+
    width: 200px;
    padding: 15px 0;
    color: white;
@@ -89,11 +88,10 @@ button{
    font-weight: bold;
    background-color: color-mix(in srgb, purple 60%, pink 40%);
    }
-button:hover{
+.button2:hover{
 
     background-color: rgb(187, 12, 200);
 }
-
 
 @media (max-width:600px){
     h1{
@@ -223,10 +221,15 @@ h2{
     background-color: violet;
 
 }
+
 @media(max-width:600px){
     .developers{
     font-size: small;
+    margin-top: 20%;
+
+   
     }
+
     .text1{
         position: absolute;
         top: 20%;
@@ -238,20 +241,32 @@ h2{
         position: absolute;
         top: 40%;
         margin-left:20px;
-        margin-right:60px
+        margin-right:60px;
+        font-size: small;
         
+
+        
+    }
+    .text1{
+        font-size: larger;
+    }
+    .box{
+        margin: 10px;
+        height: 20rem;
+
     }
     .box2{
         display: none;
     }
     .box3{
         position: absolute;
-        margin: 20px;
+        margin: 10px;
         width: 80%;
-        height: 10rem;
+        height: 5rem;
         background-color: blueviolet;
         border-radius: 30px;
         border: 3px solid black;
-        transform: translateX(-2%);
+        transform: translateY(0%);
     }
+   
 }
