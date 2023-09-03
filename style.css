@@ -98,14 +98,9 @@ button:hover{
 @media (max-width:600px){
     h1{
         font-size: smaller;
-        color: red;
+        
     }
-    .nav ul{
-        display: none;
-    }
-    button{
-        display: block;
-    }
+   
 }
 
 
