@@ -93,6 +93,14 @@ h1{
     background-color: rgb(187, 12, 200);
 }
 
+.image{
+    height: 100%;
+    width: 30%;
+    transform: translateX(180%);
+}
+
+
+
 @media (max-width:600px){
     h1{
         font-size: smaller;
