@@ -109,7 +109,7 @@ button:hover{
 .developers {
   
     margin: 20px;
-    color:grey;
+    color:white;
     position: absolute;
     transform: translate(20%);
     top: 10%;
@@ -119,7 +119,7 @@ button:hover{
 .box{
     height: 12rem;
     width: 80%;
-    background-color: purple;
+    background-color: blueviolet;
     border-radius: 20px;
     border: 2px solid black;
    
@@ -141,7 +141,7 @@ h2{
     
 }
 p1{
-   color:grey ;
+   color:white   ;
   
    
 }
@@ -201,4 +201,15 @@ h2{
     color: white;
     text-decoration: none;
     list-style: none;
+}
+ .box3:hover{
+    background-color: violet;
+}
+.box2:hover{
+    background-color: violet;
+    
+}
+.box:hover{
+    background-color: violet;
+
 }
