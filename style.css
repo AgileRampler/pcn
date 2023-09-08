@@ -131,7 +131,7 @@ cursor:pointer;
         font-size: smaller;
     }
     .image{
-        display:hidden;
+        display:none;
     }
 
 }
