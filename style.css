@@ -1,309 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Playfair Display', serif;
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image:url(Images/image.jpg); 
-    background-size: cover;
-    background-position: center;
-    
-
-}
-nav{
-    display: flex;
-    padding: 10px 12px ;
-    justify-content: space-between;
-    justify-content: end;
-
-
+/*  Home .html*/
+body{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
 }
 
-
-.nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 12px 24px   ;
-
-}   
-
-
-.nav ul li a{
-    color: grey;
-    text-decoration: none;
-    font-size: 15px;
-}
-.nav ul li a:hover{
-    color:white;    
-
-    border-radius: 50px;
-}
-.nav ul li .active {
-    color:white
-    background-color: transparent;
-
-}
-.button1{
-    background-color: purple;
-    border-radius: 120px 20px   ;
-    padding: 12px 24px;
-    background-color: color-mix(in srgb, purple 60%, pink 40%);
-    color: white;
-    text-decoration: none;
-    list-style: none;
-    cursor: pointer;
-}
-
-.button1:hover{
-
-    background-color: rgb(187, 12, 200);
-}
-.text{
-
-    width: 90%;
+/* background color */
+.container{
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 9%, 
+      transparent 9%
+    );
+    background-position: 10% 0%;
+    background-size: 12vmin 12vmin;
+   
+    left: 0px;
     position: absolute;
-    top: 70%;
-    bottom: 20%;
-    font-size: larger;
-    
+    height: 100vh;
+    top: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 1;
 }
-h1{
-    color: whitesmoke;
-    word-spacing: 10px;
-    font: 50%;
-    margin:10px;
-
-}
-
-.button2{
-
-width: 200px;
-padding: 15px 0;
-color: white;
-background: purple;
-border: transparent;
-border-radius: 40px 20px;
-margin: 20px 10px;
-font-weight: bold;
-background-color: color-mix(in srgb, purple 60%, pink 40%);
-cursor:pointer;
-}
-.button2:hover{
-
-    background-color: rgb(187, 12, 200);
-}
-
+/* wallet image*/
 .image{
-    position: absolute;
-    height: 60%;
-    width: 20%;
-    transform:translate(360%,40%);
+  position: absolute;
+  height: 30rem;
+  transform: translate(280%,160%);
+  
+ 
 
 }
-.pay{
-    position: absolute;
-    font-size: 260%;    
-    color:white ;
+
+/* navigatoion tab containg home,blog etc*/
+.navigation{
+
+    position: fixed;
+    display: flex;
+    margin: 20px;
+    animation: 3s anim-lineUp ease-out ;
+    margin-left: 55rem;
+    top: 0;
     
 }
-.forex{
+
+/* elemtn inside navigation home ,blog */
+.navigation a{
+  
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px ;
     
-    color: red;
-    font-size: 120%;
-    transform:translateY;  
+    
+}
+/* scroll to next page  */
+.second-page-content{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+   transform: translate(120%,320%);
+  line-height: 5rem;
+  
 
 }
-.logo{
-    position: relative;
-    width: 10%;
+
+/* size of pcn*/
+span{
+  font-size: 40px;
+  margin-left: 10rem;
+  animation: 4s anim-lineUp ease-out ;
+}
+
+/*  launch to next page button*/
+#launch-button{
+  font-size: 20px;
+  border-radius: 30px;
+ cursor: pointer;
+ padding: 20px;
+ background-color: aqua;
+}
+
+/* hover effect for navigation */
+.navigation a:hover{
+  opacity: 0.2;
+  transition: 400ms ease;
+}
+/* hover effect for launch button */
+
+#launch-button:hover{
+  
+    transition: opacity 400ms  ;
+    opacity: 1;
+   
+    
+}
+/* download button*/
+#download-button{
+  position: relative;
+
+    font-size: 20px;
+    padding: 20px;
+     border-spacing: 50px;
+    border-radius:30px ;
     cursor: pointer;
-    
-    
-    
+    background-color: aqua;
+   animation: 6s anim-lineUp ease-out ;
+ 
+
+}
+
+/* download to chrome button*/
+#chrome-button{
+  position: absolute;
+  font-size: 20px;
+    padding: 20px;
+     border-spacing: 50px;
+    border-radius:30px ;
+   margin-left: 10rem;
+   cursor: pointer;
+   background-color: aqua;
+   animation: 6s anim-lineUp ease-out ;
+   }
+
+
+
+/* container for chrome and navigatopmn */
+.button-container{
+  
+ inset: 0;
+ transform: translateY(360%);
+ margin-left: 10rem;
+
+
+}
+
+.scroll{
+  
+  color: white;
+  font-size: 30px;
+  display: grid;
+  justify-content: center;
+  transform: translateY(25rem);
+  animation: 4s anim-lineUp ease-out ;
+ 
   
 }
+/*content of the site */
+.text{
+    
+    
+    color: white;
+    font-size: 30px;
+    transform: translateY(140%);
+    transition: ease 400ms;
+    margin-left: 4rem;
+    
+  }
+  /* content position*/
+  .section-container{
+    display: grid;
+    justify-content: center;
+  }
+  /* content animation*/
+  .text-line {
+      animation: 4s anim-lineUp ease-out ;
+  }
 
-@media (max-width:600px){
-    h1{
-        font-size: smaller;
+/* animation to site*/
+  @keyframes anim-lineUp  {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+      
     }
-    .image{
-        display:none;
+    20% {
+      opacity: 0;
+      display: none;
     }
-
-}
-
-
-
-
-/* For Developer area */
-
-.conatainer{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(Images/1301340.jpg); 
-    background-size: cover;
-    background-position: center;
-
-}
-.developers {
-
-    margin: 10px;
-    color:white;
-    position: absolute;
-    transform: translate(20%);
-    top: 30%;
-    width: 80%;   
-}
-
-.box{
-    height: 12rem;
-    width: 80%;
-    background-image: url(Images/images2.jpg);
-    background-position: center ;
-    background-size: cover;
-    border-radius: 20px;
-    border: 2px solid black;
-
-
-
-}
-h2{
-    color:white;
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+      
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+      
+    }
     
-
-}
-.text1{
-    position: absolute;
-    top: 40%;
-    bottom: 40%;
-    font-size: larger;
-    margin-left: 8rem;
-    
-    
-}
-p1{
-color:white   ;
+  }
 
 
-}
-.text2{
 
-    position: absolute;
-    top: 65%;
-    bottom: 40%;
-    font-size: smaller;
-    margin-left:8rem;
-    
-    
-}
-.box2{
-    position: absolute;
-    margin: 20px;
-    width: 40%;
-    height: 10rem;
-    background-color: blueviolet;
-    border-radius: 30px;
-    border: 3px solid black;
-    
+
+/*  Developor.html*/
+
+
+.developor-content{
+  
+  animation: 4s anim-lineUp ease-out;
+  height: 20vh;
+  width: 60vw;
+  background-image: url(Images/images2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px ;
+  border: none;
+     margin-left: 250px;
+     margin-top: 10%;
+
+ 
 
 
 }
-h2{
-    position: absolute;
-    margin: 20px;
-    top: 10%;
+.payment{
+  position: relative;
+  color: white;
+  font-size: 20px;
+  margin-left: 14rem;
+  margin-top: 12rem;
+      
 
 }
-.p2{
-    color: rgb(250, 250, 244);
-    font-size: small;
-    position: absolute;
-    bottom: 20%;
-    top: 30%;
-    margin: 20px;
-    
+.payment-sub{
+  position: absolute;
+  color: white;
+  font-size: 15px;
+ margin-top: 2rem;
+  margin-left: 15rem;
+
 }
-.box3{
-    position: absolute;
-    margin: 20px;
-    width: 30%;
-    height: 10rem;
-    background-color: blueviolet;
-    border-radius: 30px;
-    border: 3px solid black;
-    transform: translateX(150%);
-    
+.define-content{
+  position: absolute;
+  animation: 4s anim-lineUp ease-out;
+  height: 20vh;
+  width: 30vw;
+  background-color: grey;
+  border-radius: 20px ;
+  border: none;
+  margin-left: 250px; 
+  margin-top: 20px;
+ 
+  
+}
+.definition{
+  color: black;
+  margin-left: 20px;
+}
+
+.definition-sub{
+  margin-left: 13px;
+  color: black;
+  font-size: 15px;
+}
+.documentation{
+ position: absolute;
+  animation: 4s anim-lineUp ease-out;
+  height: 20vh;
+  width: 30vw;
+  background-color: grey;
+  border-radius: 20px ;
+  border: none;
+  margin-left: 30rem;
+  bottom: 2%;
 }
 .git{
-    position: absolute;
-    margin: 25px;
-    text-align: center;
-    top: 20%;
-    color: white;
-    text-decoration: none;
-    list-style: none;
+  display: grid;
+  justify-content: center;
+  margin-top: 10%;
+  text-decoration: none;
+  color: black;
+  opacity: 1;
 }
-.box3:hover{
-    background-color: violet;
-}
-.box2:hover{
-    background-color: violet;
-    
-}
-.box:hover{
-    background-color: violet;
-
-}
-
-@media(max-width:600px){
-    .developers{
-    font-size: small;
-    margin-top: 20%;
-
-
-    }
-
-    .text1{
-        position: absolute;
-        top: 20%;
-        bottom: 40%;
-        margin: 20px;
-    
-    }
-    .text2{
-        position: absolute;
-        top: 40%;
-        margin-left:20px;
-        margin-right:60px;
-        font-size: small;
-        
-
-        
-    }
-    .text1{
-        font-size: larger;
-    }
-    .box{
-        margin: 10px;
-        height: 20rem;
-
-    }
-    .box2{
-        display: none;
-    }
-    .box3{
-        position: absolute;
-        margin: 10px;
-        width: 80%;
-        height: 5rem;
-        background-color: blueviolet;
-        border-radius: 30px;
-        border: 3px solid black;
-        transform: translateY(0%);
-    }
-
+.documentation:hover{
+  opacity: 0.2;
+  transition: opacity 400ms;
 }
